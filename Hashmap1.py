@@ -65,3 +65,4 @@ for i in nums:
                 a.append(i)
 
 #If we need only keys and dont need values then we can use set{]}
+#Hashmap and set takes same complexity so use hashmap
