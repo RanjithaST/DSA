@@ -76,3 +76,12 @@ for i in a:
     else:
         h[i]=1
 print(h[10])
+
+a={}
+s=[0,1,2,1,2,3,1,2,3,4]
+for i in s:
+    if i in a:
+        a[i] += 1
+    else:
+        a[i] = 1
+print(a)
