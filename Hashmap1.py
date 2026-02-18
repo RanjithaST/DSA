@@ -55,7 +55,7 @@ for i in nums:
     else:
         h[i]=0 #{1:0,2:0,3:0} 
 
-#If interviewer ask why using hashmap if value if not at all used.so we can do using list if focus is only on duplicate
+#If interviewer ask why using hashmap if value is not at all used.so we can do using list if focus is only on duplicate
         nums=[1,2,1,3,3]
         a=[]
         for i in nums:
