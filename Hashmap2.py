@@ -53,9 +53,22 @@ for x in a:
         mark=1
     else:
         h[i]=sum
+        print(h)
         i=i+1
+       
 if mark==0:
     print("No")
 
     
-
+# ---------------------------------------------------------------------
+'''
+    h=set()
+    ans=[]
+    for i in nums:
+        if(i in h):
+            ans.append(i)
+        else:
+            h.add(i)
+    return ans
+'''
+                
