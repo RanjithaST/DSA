@@ -61,5 +61,5 @@ mark1=mark1-1
 mark2=mark2-1
 for j in range(mark1,mark2+1):
     print(a[j],end=" ")
-print(" ")
+print(" ")#for space
 print(maxlen+1)#maxlen will always have 1 value less(Both in 0 and 1 based indexing)
