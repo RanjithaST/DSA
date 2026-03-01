@@ -49,7 +49,7 @@ maxlen=0
 i=1
 for x in a:
     if x in h and i-h[x]>maxlen: #only first occurance so pass
-        maxlen=i-h[x] #4-1=4 eventhough lenght is 4(4 elements are there so add 1)
+        maxlen=i-h[x] #4-1=3 eventhough length is 4(4 elements are there so add 1)
         mark1=h[x]
         mark2=i
     else:
