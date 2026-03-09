@@ -117,9 +117,9 @@ if found==False:
 # To return only single element
 #xor - x^y=1 and y^y=0
 
-s = input() 
-ans=0
-for i in range(len(s)):
-    ans=ans^ord(s[i])
-print(chr(ans))
+# s = input() 
+# ans=0
+# for i in range(len(s)):
+#     ans=ans^ord(s[i])
+# print(chr(ans))
     

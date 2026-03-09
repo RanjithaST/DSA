@@ -1,3 +1,4 @@
+'''
 n=6
 arr=[1,2,3,4,1,2]
 print(sum(arr))
@@ -97,3 +98,55 @@ for i in range(n-2, -1, -1):
     if arr[i] > max_right:
         max_right = arr[i]
         print(max_right, end=" ")
+
+n=int(input())
+a=list(map(int,input().split()))
+pos=0
+for i in range(len(a)):
+    if a[i]!=0:
+        a[pos]=a[i]
+        pos=pos+1
+for i in range(pos,len(a)):
+    a[i]=0
+print(*a)
+
+n=int(input())
+bin=""
+while n>0:
+    a=n%2
+    bin=str(a)+bin
+    n=n//2
+print(bin)
+
+n=int(input())
+d=bin(n)
+print(d[2:])
+
+n=input()
+d=0
+p=0
+for i in n[::-1]:
+    d=d+int(i)*(2**p)
+    p=p+1
+print(d)
+
+n=str(100)
+dec=int(n,2)
+print(dec)
+'''
+n=10
+bin=""
+while n>0:
+    a=n%2
+    bin=str(a)+bin
+    n=n//2
+print(bin)
+toggle=''
+for i in bin:
+    if i=='0':
+        toggle+='1'
+    else:
+        toggle+='0'
+print(int(toggle,2))
+
+
