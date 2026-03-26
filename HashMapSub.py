@@ -10,7 +10,8 @@ valid subarrays:
 6,2,11,6
 
 a=[* * 10 * * * * 10 * * * * 10]
-   0 1  3 4 5 6 7 8  9  10 ...13
+   0 1 2
+     3 4 5 6 7 8  9  10 ...13
    2-13 is longest
 longest subarray - 2 to till end
 longest subarray- first entry is permanent entry,remaining entries is for calculation
