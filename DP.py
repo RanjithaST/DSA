@@ -65,3 +65,32 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
  problem of lookup
  a=[buy(min)|x|sell(max)]
 '''
+
+'''
+Dynamic programing means
+
+large problem statement
+break into smaller chunks and proceed
+al chunks will be done and last value will be final value
+
+eg:
+sum in dp:
+[1,2,3,4,5]
+[1,3,6,10,15] upto certain index
+so sum is 15
+
+smallest element:
+[1,2,3,4,5,0,1]
+[1,1,1,1,1,0,-]
+'''
+'''
+Input: flowerbed = [1,0,0,0,1], n = 1
+Output: true
+5 pots,if one pot filled other must be empty, no 2 pots are adjacent
+[1,0,1,0,1] n=1 ->true
+[1,0,0,0,1] n=2 ->[1,0,1,0,1] -> 1 remaining so false
+
+boundary case
+[1] n=1 ->no
+[0] n=1 ->yes
+'''

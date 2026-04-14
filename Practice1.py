@@ -134,19 +134,39 @@ n=str(100)
 dec=int(n,2)
 print(dec)
 '''
-n=10
-bin=""
-while n>0:
-    a=n%2
-    bin=str(a)+bin
-    n=n//2
-print(bin)
-toggle=''
-for i in bin:
-    if i=='0':
-        toggle+='1'
-    else:
-        toggle+='0'
-print(int(toggle,2))
+# n=10
+# bin=""
+# while n>0:
+#     a=n%2
+#     bin=str(a)+bin
+#     n=n//2
+# print(bin)
+# toggle=''
+# for i in bin:
+#     if i=='0':
+#         toggle+='1'
+#     else:
+#         toggle+='0'
+# print(int(toggle,2))
+
+
+# a=10
+# b=""
+# while a>0:
+#     n=a%2
+#     b=str(n)+b
+#     a=a//2
+# print(b) #1010
+ 
+# a=10
+# print(bin(a)[2:])
+
+a="1010"
+x=0
+j=0
+for i in a[::-1]:
+    x=x+(int(i)*(2**j))
+    j=j+1
+print(x) #10
 
 

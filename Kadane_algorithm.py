@@ -70,3 +70,10 @@ print()
 print(submin)
 
 #sum of all the negative values gives smallest subarray
+a=[10,20,30,-500,10,15,10,8]
+s=0
+m=0
+for i in a:
+   s=s+i
+   m=max(s,m)
+print(m)

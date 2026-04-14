@@ -123,3 +123,7 @@ if found==False:
 #     ans=ans^ord(s[i])
 # print(chr(ans))
     
+a=[4, 5, 6, 7, 0, 1, 2]
+for i in range(len(a)-1):
+    if(a[i]>a[i+1]):
+        print(i+1)
