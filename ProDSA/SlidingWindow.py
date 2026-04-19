@@ -80,7 +80,6 @@ for i in range(0,len(a)-k):
     6
     11
     2
-    
     for j in range(i,i+k+1):
         sum=sum+a[j]
    
@@ -92,14 +91,12 @@ print(maxsum)
 
 a=[1,2,4,6,11,2,10,5]
 k=3
-k=k-1
 i,j=0,0
 sum=0
 maxsum=0
-while(j<=k):
+while(j<k):
     sum=sum+a[j]
     j=j+1
-j=j-1
 while(j<len(a)):
     sum=sum+a[j]-a[i]
     maxsum=max(sum,maxsum)

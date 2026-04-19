@@ -161,12 +161,50 @@ print(dec)
 # a=10
 # print(bin(a)[2:])
 
-a="1010"
-x=0
+# a=2
+# b=3
+# r=1
+# for i in range(b):
+#     r=r*a
+# print(r)
+
+# n=[1,2,3,0,0,4,4,0,1,2]
+# pos=0
+# for i in range(len(n)):
+#     if n[i]!=0:
+#         n[pos]=n[i]
+#         pos=pos+1
+# for i in range(pos,len(n)):
+#     n[i]=0
+# print(n)
+
+# a=[1,1,2,2,2,2,3,3,3,3,8,8]
+# i=1
+# j=1
+# count=0
+# while(j<len(a)):
+#     if(a[j]!=a[i-1]):
+#         a[i]=a[j]
+#         i=i+1
+#         count+=1
+#     j=j+1
+# print(a)
+# print(count) #or i
+
+a=[1,3,5]
+b=[2,4,6]
+c=[]
+i=0
 j=0
-for i in a[::-1]:
-    x=x+(int(i)*(2**j))
-    j=j+1
-print(x) #10
-
-
+while(i<len(a) and j<len(b)):
+    if(a[i]<b[j]):
+        c.append(a[i])
+        i=i+1
+    elif(a[i]>b[j]):
+        c.append(b[j])
+        j=j+1
+if(i!=len(a)):
+    c.append(a[i])
+if(j!=len(b)):
+    c.append(b[j])
+print(c)

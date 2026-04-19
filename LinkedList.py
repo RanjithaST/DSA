@@ -64,6 +64,5 @@ class Solution(object):
             count=count+1
             if(count==length):
                 return head
-            head=head.next
-        
+            head=head.next  
 '''
